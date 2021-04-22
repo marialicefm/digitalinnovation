@@ -4,10 +4,10 @@ fun main() {
     val values = IntArray(5) //precisa passar um tamanho pro array no parênteses
 
     values[0] = 1
-    values[1] = 2
-    values[2] = 3
-    values[3] = 4
-    values[4] = 5
+    values[1] = 10
+    values[2] = 2
+    values[3] = 8
+    values[4] = 4
 
     println("PRINTANDO COM FOR ...")
     for (valor in values) { //imprime todos os valores do array
@@ -24,6 +24,12 @@ fun main() {
     println("PRINTANDO COM INDICES ...")
     for (valor in values.indices) {
         println(values[valor]) //recupera o valor que está naquela posição específica
+    }
+
+    println("PRINTANDO COM VALORES ORDENADOS ...")
+    values.sort() //ordena do menor pro maior
+    for (valor in values) {
+        println(valor)
     }
 
 
