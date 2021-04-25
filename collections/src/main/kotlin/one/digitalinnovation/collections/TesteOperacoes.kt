@@ -9,8 +9,8 @@ fun main () {
 
     println(".........................")
 
-    println("Maior salario: ${salarios.max()}") //pega o maior valor
-    println("Menor salario: ${salarios.min()}") //pega o menor valor
+    println("Maior salario: ${salarios.maxOrNull()}") //pega o maior valor
+    println("Menor salario: ${salarios.minOrNull()}") //pega o menor valor
     println("Media salarial: ${salarios.average()}") //dá a média dos salários
 
     val salariosMaiorQue500 = salarios.filter {
